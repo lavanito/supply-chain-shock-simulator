@@ -1,5 +1,7 @@
 # Supply Chain Shock Simulator
 
+[![Verify model](https://github.com/lavanito/supply-chain-shock-simulator/actions/workflows/verify.yml/badge.svg)](https://github.com/lavanito/supply-chain-shock-simulator/actions/workflows/verify.yml)
+
 Build a production chain, raise the price of a restricted input, and see which stages lose jobs. Everything is computed in the browser; there is no backend.
 
 ## Why the numbers can be trusted
