@@ -1,0 +1,17 @@
+name: Verify model
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test-model:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      # The model and its tests have no dependencies, so no install step is needed.
+      - name: Published figures and preset wiring
+        run: npm run test:model
